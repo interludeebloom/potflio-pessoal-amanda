@@ -2,16 +2,16 @@ import { createFileRoute } from "@tanstack/react-router";
 import { ArrowLeft, ArrowRight, ArrowUpRight, Github, Instagram, Linkedin, Menu, Moon, Music2, Pause, Play, Sun, X } from "lucide-react";
 import { useEffect, useState } from "react";
 
-import amandaEvent from "@/assets/amanda-event.jpeg.asset.json";
-import amandaHackathon from "@/assets/amanda-hackathon.jpeg.asset.json";
-import amandaLaptop from "@/assets/amanda-laptop.jpeg.asset.json";
-import amandaPortrait from "@/assets/amanda-portrait.jpeg.asset.json";
-import amandaSpeaking from "@/assets/amanda-speaking.jpeg.asset.json";
+import amandaEvent from "@/assets/amanda-event.jpeg";
+import amandaHackathon from "@/assets/amanda-hackathon.jpeg";
+import amandaLaptop from "@/assets/amanda-laptop.jpeg";
+import amandaPortrait from "@/assets/amanda-portrait.jpeg";
+import amandaSpeaking from "@/assets/amanda-speaking.jpeg";
 import climaquiProjectHome from "@/assets/climaqui-project-home.png";
-import pixelComputer from "@/assets/pixel-computer.png.asset.json";
-import pixelDino from "@/assets/pixel-dino-transparent.png.asset.json";
+import pixelComputer from "@/assets/pixel-computer.png";
+import pixelDino from "@/assets/pixel-dino-transparent.png";
 import pixelFolder from "@/assets/pixel-folder-transparent.png";
-import safrascoreProject from "@/assets/safrascore-project.png.asset.json";
+import safrascoreProject from "@/assets/safrascore-project.png";
 
 export const Route = createFileRoute("/")({
   head: () => ({
@@ -47,22 +47,22 @@ const socials = [
 
 const aboutPhotos = [
   {
-    src: amandaSpeaking.url,
+    src: amandaSpeaking,
     alt: "Amanda apresentando um projeto com um microfone em um evento",
     label: "Apresentação de projeto",
   },
   {
-    src: amandaHackathon.url,
+    src: amandaHackathon,
     alt: "Amanda com sua equipe e os troféus conquistados em um hackathon",
     label: "Hackathon · equipe premiada",
   },
   {
-    src: amandaEvent.url,
+    src: amandaEvent,
     alt: "Amanda participando de um evento sobre tecnologia e clima",
     label: "Tecnologia · ciência · eventos",
   },
   {
-    src: amandaLaptop.url,
+    src: amandaLaptop,
     alt: "Amanda ao lado de seu notebook personalizado com adesivos",
     label: "Criatividade em código",
   },
@@ -165,7 +165,7 @@ function Portfolio() {
               <p className="mb-5 font-mono text-[11px] uppercase text-deep">(a) — Portfólio · 2026</p>
               <div className="flex items-end gap-4 sm:gap-6">
                 <h1 className="font-syne text-5xl font-extrabold leading-[0.95] text-balance sm:text-6xl md:text-7xl">Amanda<br />Weiler</h1>
-                <img src={pixelDino.url} alt="Dinossauro pixelado" className="mb-1 h-20 w-auto shrink-0 dark:invert sm:h-28" />
+                <img src={pixelDino} alt="Dinossauro pixelado" className="mb-1 h-20 w-auto shrink-0 dark:invert sm:h-28" />
               </div>
               <p className="mt-6 max-w-[46ch] text-pretty text-lg text-ink/75">
                 Desenvolvedora criativa. Construo experiências que unem código, pesquisa e dados para gerar decisões com intenção e resolver problemas reais.
@@ -189,7 +189,7 @@ function Portfolio() {
             <div className="hero-rise-delay md:col-span-5">
               <div className="relative mr-3">
                 <div className="absolute -inset-2 border border-linework/60" aria-hidden="true" />
-                <img src={amandaPortrait.url} alt="Amanda Weiler sorrindo em um evento de tecnologia" className="relative aspect-[4/5] w-full object-cover object-[center_38%]" />
+                <img src={amandaPortrait} alt="Amanda Weiler sorrindo em um evento de tecnologia" className="relative aspect-[4/5] w-full object-cover object-[center_38%]" />
                 <span className="absolute -left-3 top-4 -rotate-6 bg-butter px-2.5 py-1 font-mono text-[10px] uppercase text-accent-foreground">Olá!</span>
               </div>
             </div>
@@ -211,7 +211,7 @@ function Portfolio() {
                 title="SafraScore"
                 description="Plataforma que cruza clima e preço de commodities para transformar risco de safra em score, alertas e recomendações mais claras."
                 href="https://safrascore.vercel.app/"
-                image={safrascoreProject.url}
+                image={safrascoreProject}
                 imageAlt="Página inicial do projeto SafraScore"
                 tags={["Dados públicos", "Risco agrícola", "Produto web"]}
               />
@@ -290,7 +290,7 @@ function Portfolio() {
               <div className="paint-statusbar"><span>@itsamanda.dev</span><span>{currentPhoto + 1} / {aboutPhotos.length}</span></div>
             </div>
             <div id="habilidades" className="scroll-mt-24 md:col-span-12">
-              <img src={pixelComputer.url} alt="Computador pixelado" className="mb-5 h-20 w-auto mix-blend-multiply dark:invert dark:mix-blend-screen" />
+              <img src={pixelComputer} alt="Computador pixelado" className="mb-5 h-20 w-auto mix-blend-multiply dark:invert dark:mix-blend-screen" />
               <h3 className="mb-4 font-mono text-[11px] uppercase text-deep">(d) — Habilidades</h3>
               <ul className="grid gap-x-8 md:grid-cols-2">
                 {["Análise de dados e visualização", "Desenvolvimento back-end", "Desenvolvimento web", "Pesquisa científica"].map((skill, index) => (

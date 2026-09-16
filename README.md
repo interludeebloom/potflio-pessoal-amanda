@@ -1,6 +1,8 @@
-# Welcome to your Lovable project
+# Portfólio Pessoal — Amanda Weiler
 
-This project was built with [Lovable](https://lovable.dev).
+Este projeto foi desenvolvido com o auxílio da ferramenta [Lovable](https://lovable.dev) para geração de código, mas a ideia, o conceito visual e as referências de design são de minha autoria.
+
+A prototipação da interface foi feita anteriormente por mim no **Figma**, onde defini o layout, a paleta de cores, a tipografia e as referências retrô/pixel-art antes de qualquer geração de código.
 
 ## Build with Lovable
 
@@ -27,3 +29,9 @@ npm run dev
 - TypeScript
 - React
 - Tailwind CSS
+
+## Autoria
+
+- **Ideia, conceito e referências visuais:** Amanda Weiler
+- **Prototipação (UI/UX):** Figma
+- **Construção/geração da interface a partir do protótipo:** Lovable
