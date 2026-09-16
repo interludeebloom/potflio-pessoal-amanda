@@ -86,3 +86,5 @@ Este é um **projeto pessoal e autoral**. O design, o conceito visual, as imagen
 <p align="center">
   <sub>Feito com curiosidade, café e uma boa dose de nostalgia por computadores antigos 🕹️ · Amanda Weiler</sub>
 </p>
+
+No ar em: itsamandadev.vercel.app
